@@ -1,11 +1,52 @@
-.someClass {
+h1{
+    color: coral;
+    text-align: center;
+} {
 
 }
 
-.error {
-    border: 1px solid red;
-}
+
 
 .errorText{
     color:red;
+}
+
+.btn{
+    border:none;
+    background-color: darkslategray;
+    color: aliceblue;
+    padding:10px 20px;
+    border-radius: 0  10px 10px 0;
+    margin-left: -1px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+.input{
+    padding: 9px 10px 9px 10px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid darkslategray;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.countName{
+    padding: 3px 10px 7px 10px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid darkslategray;
+    background-color: aliceblue;
+}
+.count{
+    background-color: darkslategray;
+    color: aliceblue;
+    padding:8px 20px;
+    border-radius: 0  10px 10px 0;
+    margin-left: -1px;
+}
+.error {
+    border: 2px solid red;
+    border-radius: 10px 0 0 10px;
+    padding: 9px 10px 9px 10px;
 }
