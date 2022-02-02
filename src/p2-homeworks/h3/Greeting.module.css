@@ -1,11 +1,7 @@
 h1{
     color: coral;
     text-align: center;
-} {
-
 }
-
-
 
 .errorText{
     color:red;
@@ -15,7 +11,7 @@ h1{
     border:none;
     background-color: darkslategray;
     color: aliceblue;
-    padding:10px 20px;
+    padding:12px 20px;
     border-radius: 0  10px 10px 0;
     margin-left: -1px;
     margin-right: 40px;

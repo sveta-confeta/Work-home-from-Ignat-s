@@ -1,7 +1,33 @@
-
+*{
+    box-sizing: border-box;
+}
 .active{
     background-color: aqua;
 }
 .affair{
     display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
+h1{
+    color: coral;
+    text-align: center;
+}
+.affairmap {
+    background-color: aquamarine;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid darkslategray;
+}
+.buttons{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid darkslategray;
+    border-top: none;
+}
+.item{
+
+}
+

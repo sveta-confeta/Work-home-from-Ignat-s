@@ -1,7 +1,24 @@
+label{
+    cursor: pointer;
+}
+
 .checkbox {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: white;
+    border: #3b3b3b 1px solid;
+    padding-bottom: 5px;
 
 }
 
-.spanClassName {
+.checkbox:checked {
+    appearance: none;
+    background-image: url('check.png');
+    background-repeat: no-repeat;
+    background-position: right 3px;
+
 
 }
+

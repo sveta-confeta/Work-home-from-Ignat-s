@@ -6,18 +6,16 @@ import s from './Affairs.module.css'
 
 export type AffairsPropsType = {
     data: Array<AffairType>  //массив с делами
-    setFilter: (filter:FilterType)=>void // прокидываем через пропс отфильтрованные данные под надзором usestate
-    deleteAffairCallback:(id:number)=> void//прокидываем через пропс функцию удаления
-    filter:FilterType
+    setFilter: (filter: FilterType) => void // прокидываем через пропс отфильтрованные данные под надзором usestate
+    deleteAffairCallback: (id: number) => void//прокидываем через пропс функцию удаления
+    filter: FilterType
 }
-
-
 
 
 export function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
-        <Affair // should work
-            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+        <Affair
+            key={a._id}
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
@@ -35,34 +33,35 @@ export function Affairs(props: AffairsPropsType) {
     const setLow = () => {
         props.setFilter('low')
     }
-    const set=(event:React.MouseEvent<HTMLButtonElement,MouseEvent>)=>{
+    const set = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         props.setFilter(event.currentTarget.value as FilterType)
     }
 
     //для подсветки кнопок:
 
-    const cnAll= s.button + ' '+ (props.filter==='all' ? s.active : '')
-    const cnHigh=s.button + ' '+ (props.filter==='high' ? s.active : '')
-        const cnMiddle=s.button + ' '+ (props.filter==='middle' ? s.active : '')
-    const cnLow=s.button + ' '+ (props.filter==='low' ? s.active : '')
-        const setClass=(filter:FilterType)=>{
-        return s.button + (props.filter ===filter ? '' + s.active: '')
-        }
+    const cnAll = s.button + ' ' + (props.filter === 'all' ? s.active : '')
+    const cnHigh = s.button + ' ' + (props.filter === 'high' ? s.active : '')
+    const cnMiddle = s.button + ' ' + (props.filter === 'middle' ? s.active : '')
+    const cnLow = s.button + ' ' + (props.filter === 'low' ? s.active : '')
+    const setClass = (filter: FilterType) => {
+        return s.button + (props.filter === filter ? '' + s.active : '')
+    }
 
     return (
         <div>
+            <div className={s.affairmap}>  {mappedAffairs}</div>
 
-            {mappedAffairs}
+            <div className={s.buttons}>
+                <button onClick={setAll} className={cnAll}>All</button>
+                <button onClick={setHigh} className={cnHigh}>High</button>
+                <button onClick={setMiddle} className={cnMiddle}>Middle</button>
+                <button onClick={setLow} className={cnLow}>Low</button>
+            </div>
+            {/*<button onClick={set} className={setClass('all')} value={'all'}>All</button>*/}
+            {/*<button onClick={set} className={setClass('high')} value={'high'}>High</button>*/}
+            {/*<button onClick={set} className={setClass('middle')} value={'middle'}>Middle</button>*/}
+            {/*<button onClick={set} className={setClass('low')} value={'low'}>Low</button>*/}
 
-            {/*<button onClick={setAll} className={cnAll}>All</button>*/}
-            {/*<button onClick={setHigh} className={cnHigh}>High</button>*/}
-            {/*<button onClick={setMiddle} className={cnMiddle}>Middle</button>*/}
-            {/*<button onClick={setLow} className={cnLow}>Low</button>*/}
-
-            <button onClick={set} className={setClass('all')} value={'all'}>All</button>
-            <button onClick={set} className={setClass('high')} value={'high'}>High</button>
-            <button onClick={set} className={setClass('middle')} value={'middle'}>Middle</button>
-            <button onClick={set} className={setClass('low')} value={'low'}>Low</button>
         </div>
     )
 }

@@ -12,7 +12,7 @@ export type AffairType = {
 export type FilterType = 'all' | AffairPriorityType //добавлять "all"нужно отдельно
 
 
-const defaultAffairs: Array<AffairType> = [ // need to fix any
+const defaultAffairs: Array<AffairType> = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -43,8 +43,8 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
-          
+            <h1>homeworks 2</h1>
+
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
@@ -52,9 +52,7 @@ function HW2() {
                 filter={filter}
             />
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
+
             <hr/>
         </div>
     )
