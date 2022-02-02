@@ -1,35 +1,27 @@
 .error{
     background-color: tomato;
 }
-.headerList{
+.headerList {
     display: flex;
     max-width: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 0 20px 20px 0;
     border: darkslategrey 4px solid;
-    border-right-width:60px ;
+    border-right-width: 60px;
     position: absolute;
     top: 1px;
-    left: -300px;
+    left: -340px;
     transition: left 0.5s;
     z-index: 9;
 
 }
-/*.headerList::after{*/
-/*    content: " ";*/
-/*    background: url('./add.png');*/
-/*    width: 32px;*/
-/*    height: 32px;*/
-/*    position: absolute;*/
-/*    right: -43px;*/
-/*    top: 17px;*/
-/*}*/
-.add{
+.headerList:hover{
     left: 0;
     transition: left 0.5s;
     cursor: pointer;
 }
+
 .plus{
     width: 30px;
     height: 30px;
