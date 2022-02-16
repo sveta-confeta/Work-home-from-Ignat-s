@@ -1,0 +1,20 @@
+.select{
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    background-color: darkgray;
+    color: black;
+    margin-bottom: 40px;
+}
+.select > .option{
+ background-color: #7ad1d3;
+}
+
+.select:active,
+.select:focus{
+    border: tomato 2px solid;
+    outline: none;
+}
+.option:checked{
+    background-color: darkgray;
+}

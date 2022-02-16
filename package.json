@@ -2,6 +2,7 @@
   "name": "home-tasks",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sveta-confeta.github.io/Work-home-from-Ignat-s",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -12,6 +13,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.3.3",
     "@types/uuid": "^8.3.4",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
@@ -21,6 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
