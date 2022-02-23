@@ -1,0 +1,21 @@
+
+.list{
+    padding: 15px;
+    background: darkslategrey;
+
+    width: 300px;
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+.element{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.element:hover{
+    background: darkcyan;
+    cursor: pointer;
+    font-size: 20px;
+}
