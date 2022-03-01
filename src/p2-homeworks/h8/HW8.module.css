@@ -3,7 +3,7 @@
     padding: 15px;
     background: darkslategrey;
 
-    width: 300px;
+    width: 400px;
     color: white;
 
     margin-bottom: 30px;
@@ -18,4 +18,13 @@
     background: darkcyan;
     cursor: pointer;
     font-size: 20px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+button{
+    width: 80px;
+    padding: 0 20px;
 }
