@@ -1,0 +1,16 @@
+.btn{
+    width: 90px;
+    height: 50px;
+    margin-right: 10px;
+}
+.clocks{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    align-items: center;
+    border:1px #2f4f4f solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
