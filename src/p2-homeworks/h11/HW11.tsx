@@ -45,8 +45,7 @@ function HW11() {
                         min={0}
                         max={150}
                         value={value1}
-                        onChangeRange={setValue1}
-                        withValueIndicator
+                       setValue1={setValue1}
                     />
                 </div>
 
@@ -55,7 +54,7 @@ function HW11() {
                     <SuperDoubleRange min={0} max={150}
                                       value={[value1, value2]}
                                       onChangeRange={onChangeDoubleRange}
-                                      withValueIndicators />
+                                     />
                     <div style={valueScreenStyle}> {value2} </div>
                 </div>
             </section>

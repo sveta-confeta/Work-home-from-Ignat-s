@@ -113,27 +113,6 @@
     box-shadow: var(--SR-slider_point-active-shadow);
 }
 
-/* for Internet Explorer (but need to remove var() because they are not supported in internet explorer) */
-/* .range__input::-ms-thumb {  /* Internet Explorer
-	position: relative;
-	z-index: 22; /* !!!!!!! Changed z-index value of the SLIDER POINT
-	width: var(--SR-slider_point-diameter);
-	height: var(--SR-slider_point-diameter);
-    border: var(--SR-slider_point-border);
-	border: 100%;
-	border-radius: 100%;
-	background-color: var(--SR-slider_point-bg-color);
-    background-image: var(--SR-slider_point-bg-image);
-	box-shadow: 0px 0px 6px #999, 1px 1px 8px #666;
-	cursor: pointer;
-}
-.range__input:focus::-ms-thumb {
-	box-shadow: var(--SR-slider_point-active-shadow);
-}
-.range__input:hover::-ms-thumb {
-	box-shadow: var(--SR-slider_point-active-shadow);
-}
-*/
 
 
 

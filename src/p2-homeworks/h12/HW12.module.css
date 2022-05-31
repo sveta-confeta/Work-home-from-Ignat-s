@@ -21,3 +21,9 @@
 .some-text {
     color: darkslateblue;
 }
+.wrapper{
+    padding: 40px;
+}
+.elem{
+    margin-top: 30px;
+}
