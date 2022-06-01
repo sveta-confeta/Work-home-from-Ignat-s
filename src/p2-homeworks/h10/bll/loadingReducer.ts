@@ -20,6 +20,6 @@ export const loadingAC = (value:boolean) => {
     return {
         type :'LOADING',
         value,
-    }
+    } as const
 
 }
